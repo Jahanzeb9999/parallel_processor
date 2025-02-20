@@ -54,12 +54,10 @@ pipeline.add_stage(Stage::new("Aggregation", 1));
 ```
 
 ## Data Flow
-```bash
 graph TD
     A[Data Generation - 4 workers] --> B[Transformation - 3 workers]
     B --> C[Analysis - 2 workers]
     C --> D[Aggregation - 1 worker]
-```
 
 
 
